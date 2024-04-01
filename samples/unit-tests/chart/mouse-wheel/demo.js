@@ -31,8 +31,8 @@ QUnit.test('Mouse wheel zoom on chart', function (assert) {
     );
     assert.strictEqual(
         typeof chart.resetZoomButton,
-        'undefined',
-        'Reset zoom button should not display'
+        'object',
+        'Reset zoom button should display'
     );
 
     controller.mouseWheel(200, 100, 1001);

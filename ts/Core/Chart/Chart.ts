@@ -3819,11 +3819,7 @@ class Chart {
                             { move, trigger, scale }
                         );
 
-                        if (
-                            !reset &&
-                            (newMin > floor || newMax < ceiling) &&
-                            trigger !== 'mousewheel'
-                        ) {
+                        if (!reset && (newMin > floor || newMax < ceiling)) {
                             displayButton = true;
                         }
                     }
